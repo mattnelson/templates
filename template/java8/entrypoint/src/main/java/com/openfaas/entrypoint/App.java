@@ -71,9 +71,9 @@ public class App {
             // for(Map.Entry<String, String> entry : reqHeadersMap.entrySet()) {
             //     System.out.println("Req header " + entry.getKey() + " " + entry.getValue());
             // }
-            System.out.println("getRequestURI:" + reqHeadersMap,t.getRequestURI().toString());
-            System.out.println("getRawQuery:" + reqHeadersMap,t.getRequestURI().getRawQuery());
-            System.out.println("getQuery:" + reqHeadersMap,t.getRequestURI().getQuery());
+            System.out.println("getRequestURI:" + t.getRequestURI().toString);
+            System.out.println("getRawQuery:" + t.getRequestURI().getRawQuery());
+            System.out.println("getQuery:" + t.getRequestURI().getQuery());
             IRequest req = new Request(requestBody, reqHeadersMap,t.getRequestURI().getRawQuery());
             
             IResponse res = this.handler.Handle(req);
